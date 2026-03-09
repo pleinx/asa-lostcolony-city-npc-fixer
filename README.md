@@ -129,6 +129,9 @@ Forum discussion: [Link to Wildcard Forum](https://survivetheark.com/index.php?/
 
 [Donate for me / pleinx](https://www.paypal.com/paypalme/pleinx)
 
+---
+## Contact
+If you need support with this, you can join my [discord](https://discord.com/invite/fkcCsD8e2x) and create a ticket or DM me.
 
 ---
 
