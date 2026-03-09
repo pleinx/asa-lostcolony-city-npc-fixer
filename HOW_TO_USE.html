@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASA Lost Colony City NPC Fixer - How To Use</title>
+</head>
+<body style="margin:0;padding:0;background:#0f1115;color:#e8eaf0;font-family:Arial,Helvetica,sans-serif;line-height:1.6;">
+  <div style="max-width:900px;margin:40px auto;padding:0 20px;">
+    <div style="background:#171a21;border:1px solid #2b3140;border-radius:14px;padding:32px;box-shadow:0 10px 30px rgba(0,0,0,0.25);">
+      <h1 style="margin:0 0 10px;font-size:34px;color:#ffffff;">ASA Lost Colony City NPC Fixer</h1>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">Utility to repair the Lost Colony city NPC spawn issue in ARK: Survival Ascended savegames.</p>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">This tool automatically installs the required parser, verifies the savegame structure and runs the fix script.</p>
+<div style="height:4px;"></div>
+<hr style="border:none;border-top:1px solid #2b3140;margin:28px 0;">
+<div style="height:4px;"></div>
+<h2 style="margin:22px 0 12px;font-size:24px;color:#ffffff;">Quickstart</h2>
+<div style="height:4px;"></div>
+<h4 style="margin:16px 0 8px;font-size:16px;color:#ffffff;">1. Place your savegame in:</h4>
+<div style="height:4px;"></div>
+<pre style="background:#0c0f14;border:1px solid #2b3140;border-radius:10px;padding:14px 16px;overflow:auto;"><code style="color:#b8f1c8;">
+YOUR_SAVEGAME_HERE/LostColony_WP.ark
+</code></pre>
+<p style="margin:0 0 10px;color:#c9cfdb;">Only the <code style="background:#0c0f14;padding:2px 6px;border-radius:6px;color:#ffd580;">.ark<code style="background:#0c0f14;padding:2px 6px;border-radius:6px;color:#ffd580;"> file - nothing more needed.</p>
+<div style="height:4px;"></div>
+<h4 style="margin:16px 0 8px;font-size:16px;color:#ffffff;">2. Run Fixer:</h4>
+<div style="height:4px;"></div>
+<pre style="background:#0c0f14;border:1px solid #2b3140;border-radius:10px;padding:14px 16px;overflow:auto;"><code style="color:#b8f1c8;">
+start_savegame_fixer.ps1
+</code></pre>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">Right-Click &quot;Execute with Powershell&quot;</p>
+<div style="height:4px;"></div>
+<h4 style="margin:16px 0 8px;font-size:16px;color:#ffffff;">3. Go to YOUR_SAVEGAME_HERE:</h4>
+<pre style="background:#0c0f14;border:1px solid #2b3140;border-radius:10px;padding:14px 16px;overflow:auto;"><code style="color:#b8f1c8;">
+YOUR_SAVEGAME_HERE/LostColony_WP_fixed.ark
+</code></pre>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">Use the <code style="background:#0c0f14;padding:2px 6px;border-radius:6px;color:#ffd580;">LostColony_WP_fixed.ark<code style="background:#0c0f14;padding:2px 6px;border-radius:6px;color:#ffd580;"> on your <code style="background:#0c0f14;padding:2px 6px;border-radius:6px;color:#ffd580;">SavedArks/LostColony_WP<code style="background:#0c0f14;padding:2px 6px;border-radius:6px;color:#ffd580;"> directoy. Rename the file before and replace it with yours.</p>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">Do not forget to make a backup before!</p>
+<div style="height:4px;"></div>
+<hr style="border:none;border-top:1px solid #2b3140;margin:28px 0;">
+<div style="height:4px;"></div>
+<h2 style="margin:22px 0 12px;font-size:24px;color:#ffffff;">What this tool does</h2>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">This tool:</p>
+<div style="height:4px;"></div>
+<ul style="margin:0 0 16px 22px;padding:0;color:#c9cfdb;">
+<li style="margin:6px 0;">checks if Python is installed</li>
+<li style="margin:6px 0;">ensures pip is available</li>
+<li style="margin:6px 0;">installs the required ark-save-parser package</li>
+<li style="margin:6px 0;">verifies the savegame structure</li>
+<li style="margin:6px 0;">runs the fix script to repair broken Lost Colony city NPC spawns</li>
+</ul>
+<div style="height:4px;"></div>
+<hr style="border:none;border-top:1px solid #2b3140;margin:28px 0;">
+<div style="height:4px;"></div>
+<h2 style="margin:22px 0 12px;font-size:24px;color:#ffffff;">Requirements</h2>
+<div style="height:4px;"></div>
+<ul style="margin:0 0 16px 22px;padding:0;color:#c9cfdb;">
+<li style="margin:6px 0;">Windows</li>
+<li style="margin:6px 0;">PowerShell 5.1+</li>
+<li style="margin:6px 0;">Python 3.10+</li>
+</ul>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">If Python is not installed yet, download and install it from:</p>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">https://www.python.org/ftp/python/3.14.3/python-3.14.3-amd64.exe</p>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">During installation, make sure Python is added to PATH and installing also PIP.</p>
+<div style="height:4px;"></div>
+<hr style="border:none;border-top:1px solid #2b3140;margin:28px 0;">
+<div style="height:4px;"></div>
+<h2 style="margin:22px 0 12px;font-size:24px;color:#ffffff;">Setup</h2>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">1. Download or clone this repository.</p>
+<p style="margin:0 0 10px;color:#c9cfdb;">2. Place your savegame in the following folder:</p>
+<div style="height:4px;"></div>
+<pre style="background:#0c0f14;border:1px solid #2b3140;border-radius:10px;padding:14px 16px;overflow:auto;"><code style="color:#b8f1c8;">
+YOUR_SAVEGAME_HERE
+</code></pre>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">3. Make sure the required file exists here:</p>
+<div style="height:4px;"></div>
+<pre style="background:#0c0f14;border:1px solid #2b3140;border-radius:10px;padding:14px 16px;overflow:auto;"><code style="color:#b8f1c8;">
+YOUR_SAVEGAME_HERE/LostColony_WP.ark
+</code></pre>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">4. Run the script:</p>
+<div style="height:4px;"></div>
+<pre style="background:#0c0f14;border:1px solid #2b3140;border-radius:10px;padding:14px 16px;overflow:auto;"><code style="color:#b8f1c8;">
+start_savegame_fixer.ps1
+</code></pre>
+<div style="height:4px;"></div>
+<hr style="border:none;border-top:1px solid #2b3140;margin:28px 0;">
+<div style="height:4px;"></div>
+<h2 style="margin:22px 0 12px;font-size:24px;color:#ffffff;">Important</h2>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">Always create a backup of your savegame before replacing.</p>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">While the tool is designed to be safe, modifying savegames always carries some risk.</p>
+<div style="height:4px;"></div>
+<hr style="border:none;border-top:1px solid #2b3140;margin:28px 0;">
+<div style="height:4px;"></div>
+<h2 style="margin:22px 0 12px;font-size:24px;color:#ffffff;">Credits</h2>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">This project relies on the excellent ark-save-parser created by Vincent Henau.</p>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">Repository: https://github.com/VincentHenauGithub/ark-save-parser</p>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">_Without this library, this tool would not be possible. Thanks again mate for assistance._</p>
+<div style="height:4px;"></div>
+<hr style="border:none;border-top:1px solid #2b3140;margin:28px 0;">
+<div style="height:4px;"></div>
+<h2 style="margin:22px 0 12px;font-size:24px;color:#ffffff;">Donations</h2>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">This tool is completely free to use and there is no need to donate.</p>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">However, if this project helped you and you would like to support the work behind it, both the developer of ark-save-parser and the creator of this tool are always happy about a donation.</p>
+<div style="height:4px;"></div>
+<h3 style="margin:18px 0 10px;font-size:18px;color:#ffffff;">Support VincentHenauGithub</h3>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">If this tool helped you, please also consider supporting Vincent Henau, the creator of ark-save-parser.</p>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">Vincent created and maintains the ark-save-parser framework, which helps cluster owners manage ARK communities more effectively.</p>
+<p style="margin:0 0 10px;color:#c9cfdb;">His work enables powerful tools, automation and unique community features — and as shown here, it can even help solve deeper issues that Wildcard has ignored for weeks.</p>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">Vincent is also very active in supporting the community and helping users with his project whenever he can.</p>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">If you’d like to say thanks, consider buying him a coffee ☕</p>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;"><a href="https://www.paypal.com/donate/?hosted_button_id=BV63CTDUW7PKQ" style="color:#8ab4ff;text-decoration:none;">Donate for Vincent</a> or go to his <a href="https://github.com/VincentHenauGithub/ark-save-parser" style="color:#8ab4ff;text-decoration:none;">Repository</a>.</p>
+<div style="height:4px;"></div>
+<h3 style="margin:18px 0 10px;font-size:18px;color:#ffffff;">Support me</h3>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">If you found this tool helpful, you can also support my work.</p>
+<p style="margin:0 0 10px;color:#c9cfdb;">I spent several days debugging the issue, starting the discussion in the Wildcard forums, informing other cluster owners and developers, and organizing everything from communication to this small fix tool.</p>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">Forum discussion: <a href="https://survivetheark.com/index.php?/forums/topic/773726-asa-thrallscity-npcs-no-longer-spawningpatrol-on-lostcolony-nomodsvanilla/#comment-3707416" style="color:#8ab4ff;text-decoration:none;">Link to Wildcard Forum</a></p>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;"><a href="https://www.paypal.com/paypalme/pleinx" style="color:#8ab4ff;text-decoration:none;">Donate for me / pleinx</a></p>
+<div style="height:4px;"></div>
+<div style="height:4px;"></div>
+<hr style="border:none;border-top:1px solid #2b3140;margin:28px 0;">
+<div style="height:4px;"></div>
+<h2 style="margin:22px 0 12px;font-size:24px;color:#ffffff;">License</h2>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">This project is licensed under the MIT License.</p>
+<p style="margin:0 0 10px;color:#c9cfdb;">You are free to use, modify and distribute it.</p>
+<div style="height:4px;"></div>
+<hr style="border:none;border-top:1px solid #2b3140;margin:28px 0;">
+<div style="height:4px;"></div>
+<h2 style="margin:22px 0 12px;font-size:24px;color:#ffffff;">Disclaimer</h2>
+<div style="height:4px;"></div>
+<p style="margin:0 0 10px;color:#c9cfdb;">This project is not affiliated with Studio Wildcard or ARK: Survival Ascended.</p>
+<p style="margin:0 0 10px;color:#c9cfdb;">Use at your own risk.</p>
+    </div>
+  </div>
+</body>
+</html>

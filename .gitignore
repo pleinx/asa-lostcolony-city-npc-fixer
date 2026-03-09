@@ -1,3 +1,9 @@
+ark-save-parser-main.zip
+temp
+modules.xml
+php.xml
+vcs.xml
+*.idea
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
